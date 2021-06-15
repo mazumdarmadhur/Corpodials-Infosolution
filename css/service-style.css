@@ -1,0 +1,315 @@
+@import url('style.css');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+
+body .main {
+    background-color: #f3f6f8;
+    position: relative;
+    z-index: 1;
+    margin-top: 133px;
+}
+
+
+.large-top-header {
+    text-align: center;
+    font-family: var(--rubik);
+    font-size: 140px;
+    font-weight: 600;
+    text-shadow: 0px 3px 3px rgba(149, 150, 150, 1);
+    text-transform: uppercase;
+    color: #ddd;
+}
+
+
+.billboard {
+    color: #29383f !important;
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 80px;
+}
+
+.billboard-title {
+    font-family: var(--rubik);
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: .09sem;
+}
+
+.billboard .billboard-header p {
+    max-width: 675px;
+    margin: 0 auto 15px;
+    color: #666a76;
+    font-family: var(--Baloo);
+    font-size: 20px;
+}
+
+/********* BPO SERVICE******************/
+
+.svg-file {
+    position: absolute;
+    width: 100%;
+}
+
+.service-one {
+    background: url(../img/bpo-bg.svg);
+    width: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f8f8f8;
+
+}
+
+.service-one h1 {
+    text-align: center;
+    font-weight: lighter;
+    text-transform: uppercase;
+    padding: 100px 0;
+    margin: 0;
+}
+
+
+.bpo-service {
+    margin-bottom: 30px;
+}
+
+.bpo-service .card {
+    padding: 50px 0 40px 0;
+    height: 100%;
+    border: 1px solid #f8f8f8;
+    background: #fff;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 20%);
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s;
+}
+
+.bpo-service .card:hover {
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+
+.card img {
+    width: 40%;
+    height: auto;
+}
+
+.card-body .card-title {
+    font-family: var(--rubik);
+}
+
+.card-body .card-text {
+    color: #777;
+    font-family: var(--rubik);
+}
+
+.inbound:hover {
+    transform: scale(4) translateZ(0);
+    background-color: #ffd861;
+    box-shadow: rgba(255, 215, 97, 0.48);
+}
+
+.telephonic:hover {
+    transform: scale(4) translateZ(0);
+    background-color: #B8F9D3;
+    box-shadow: rgba(184, 249, 211, 0.48);
+}
+
+.leadgen:hover {
+    transform: scale(4) translateZ(0);
+    background-color: #CEB2FC;
+    box-shadow: rgba(206, 178, 252, 0.48);
+}
+
+.hot-key:hover {
+    transform: scale(4) translateZ(0);
+    background-color: #DCE9FF;
+    box-shadow: rgba(220, 233, 255, 0.48);
+}
+
+
+.technical:hover {
+    transform: scale(4) translateZ(0);
+    background-color: #ffa19a;
+    box-shadow: rgba(255, 179, 152, 0.48);
+}
+
+.technical {
+    float: left;
+}
+
+
+/********* BPO SERVICE ENDS******************/
+
+
+/********* DATA-ENTRY SERVICE STARTS******************/
+
+
+.service-two {
+    padding: 100px 0;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+
+.service-two h1 {
+    text-align: center;
+    font-weight: lighter;
+    text-transform: uppercase;
+    padding: 200px 0;
+    margin: 0;
+}
+
+.data-entry-service {
+    margin-bottom: 30px;
+}
+
+.data-entry-service .card {
+    padding: 50px 0 40px 0;
+    height: 100%;
+    border: 1px solid #f8f8f8;
+    background: #fff;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 20%);
+    transform: translateY(30px);
+    transition: 0.5s all;
+    -webkit-transition: all 0.3s;
+
+}
+
+.data-entry-service .card:hover {
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform: translateY(0px);
+    transition: 0.2s all;
+}
+
+.data-entry,
+.data-verification,
+.document-edit,
+.online-form {
+    overflow: hidden;
+}
+
+.data-entry::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    background: #ef476f;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(8);
+    transform-origin: 41% 26%;
+    transition: transform 0.25s ease-out;
+}
+
+.data-entry:hover::before {
+    transform: scale(26);
+}
+
+.data-verification::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0px;
+    right: 0;
+    background: #ffd166;
+    height: 31px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(10);
+    transform-origin: 43% 27%;
+    transition: transform 0.25s ease-out;
+}
+
+.data-verification:hover::before {
+    transform: scale(50);
+}
+
+.document-edit::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    background: #06d6a0;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(15);
+    transform-origin: 54% 28%;
+    transition: transform 0.25s ease-out;
+}
+
+.document-edit:hover::before {
+    transform: scale(45);
+}
+
+.online-form::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    background: #118ab2;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(8);
+    transform-origin: 61% 42%;
+    transition: transform 0.25s ease-out;
+}
+
+.online-form:hover::before {
+    transform: scale(30);
+}
+
+.document-edit:hover p,
+.online-form:hover p,
+.data-verification:hover p,
+.data-entry:hover p {
+    transition: all 0.3s ease-out;
+    color: #29383f;
+}
+
+.document-edit:hover h4,
+.online-form:hover h4,
+.data-verification:hover h4,
+.data-entry:hover h4 {
+    transition: all 0.3s ease-out;
+    color: #29383f;
+}
+
+
+/********* DATA-ENTRY SERVICE ENDS******************/
+
+
+
+@media screen and (min-width: 360px) {
+    .large-top-header {
+        font-size: 46px;
+        margin-top: -46px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .large-top-header {
+        font-size: 73px;
+        margin-top: -46px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .large-top-header {
+        font-size: 120px;
+        margin-top: -36px;
+
+    }
+}

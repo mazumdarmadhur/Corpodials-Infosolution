@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <!-- Favicon link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+
+
+    <!-- Bootstrap css file -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="../css/about-style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navigation Bar Starts -->
+    <header class="header">
+        
+        <div class="container-fluid  nav-main p-0">
+            <nav class="navbar navbar-expand-lg text-success ">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo.png" alt="CORPODIAL INFOSOLUTIONS">
+                </a>
+                
+                <button class="navbar-toggler btn btn-link" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="ml-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../src/service.html">Services <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="modal" data-target="#careerModal" href="#">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../src/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../src/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal fade bd-example-modal-lg" id="careerModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header ">
+                        <h5 class="modal-title" id="exampleModalLabel">Career</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                       <img src="../img/career.jpeg" alt="" class="img-career">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <!-- Navigation Bar Ends -->
+
+    <!-- About Main Starts -->
+    <main>
+        <div class="main">
+            <div class="container">
+                <h2 class="large-top-header">About Us</h2>
+            </div>
+        </div>
+        <div class="billboard about-section">
+            <div class="container">
+                <div class="billboard-header about-title">
+                    <!-- <h2 class="billboard-title text-xl">Comprehensive Services</h2> -->
+                    <p>
+                        Corpodials Infosolutions is a full service Business Process Outsourcing (BPO) company which
+                        provides advanced BPO solutions powered by our highly skilled manpower, cutting-edge technology
+                        and reliable infrastructure engineered to reduce our client’s costs and risks, increased savings
+                        and revenues and optimized work flow. We help our clients to scale their businesses, conquer
+                        their niches and diversify with more success.</p>
+
+                    <p> Outsourcing does involve processing repetitive tasks that burden our clients and drive their
+                        costs up, but this doesn’t limit our creativity. In fact our planning and research that we put
+                        into each project separates us from the crowd.</p>
+
+                    <p> While we think outside the box, our sights remain fixed on the essentials of business process
+                        outsourcing (BPO): reduced costs and risks, increased savings and revenues and optimized work
+                        flow. Through our advanced solutions powered by our highly skilled manpower, cutting-edge
+                        technology and reliable infrastructure, we have helped our delighted clients to scale their
+                        businesses, conquer their niches and diversify with more success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- About Main Ends -->
+
+
+    <!-- Footers Starts -->
+    <footer>
+        <div data-include="footer"></div>
+    </footer>
+    <!-- Footers Ends -->
+
+
+    
+    <!-- jquery js file -->
+    <script src="../js/jquery.3.6.0.js"></script>
+
+    <!-- Bootstrap js file -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Including HTML files to to main file  -->
+    <script>
+        $(function () {
+            var includes = $('[data-include]')
+            $.each(includes, function () {
+                var file = $(this).data('include') + '.html'
+                $(this).load(file)
+            })
+        })
+    </script>
+</body>
+
+</html>
